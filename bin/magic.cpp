@@ -1,42 +1,35 @@
-/**
- * @file magic.cpp
- *
- * @version 01.01 20201227
- *
- * @brief OIS 2020-12-15
- *
- * @ingroup magic
- * (Note: this needs exactly one @defgroup somewhere)
- *
- * @author Castellani Davide
- *
- * Contact: contacts@castellanidavide.it
- *
+/*
+ * NOTE: it is recommended to use this even if you don't
+ * understand the following code.
  */
 
-// Includes
-#include <bits/stdc++.h>
+#include <fstream>
+#include <iostream>
+#include <vector>
+
 using namespace std;
 
-// Variabiles
-int N;
+// input data
+int N, L;
+vector<int> X, E;
 
-// Main code
-int main()
-{
-  // Cncomment the following lines if you want to read/write from files
-  // freopen("input.txt", "r", stdin);
-  // freopen("output.txt", "w", stdout);
+int main() {
+//  uncomment the following lines if you want to read/write from files
+//  ifstream cin("input.txt");
+//  ofstream cout("output.txt");
 
-  // Input
-  cin >> N;
+    cin >> N >> L;
+    X.resize(N);
+    E.resize(N);
+    for (int i=0; i<N; i++)
+        cin >> X[i];
+    for (int i=0; i<N; i++)
+        cin >> E[i];
 
-  // Code
-  // ...
-
-  // Output
-  cout << N << endl;
-
-  // End
-  return 0;
+    // insert your code here
+    
+    for (int i=0; i<L; i++)
+        cout << 4 << " "; // print the result
+    cout << endl;
+    return 0;
 }
